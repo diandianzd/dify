@@ -389,8 +389,8 @@ services:
 
   # The DifySandbox
   sandbox:
-    # image: g-wizl0946-docker.pkg.coding.net/ai/docker/dify-sandbox:0.2.11
-    image: langgenius/dify-sandbox:0.2.12
+    image: g-wizl0946-docker.pkg.coding.net/ai/docker/dify-sandbox:0.2.12
+    # image: langgenius/dify-sandbox:0.2.12
     restart: always
     environment:
       # The DifySandbox configurations
