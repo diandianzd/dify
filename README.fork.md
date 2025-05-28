@@ -5,12 +5,13 @@
 
 api 构建
 ```
-docker build . -t dify-api:1.3.2 -f ./Dockerfile.fork
+docker build . -t dify-api:1.4.1 -f ./Dockerfile.fork
+docker tag dify-api:1.4.1 g-wizl0946-docker.pkg.coding.net/ai/docker/dify-api:1.4.1
 ```
 web 构建
 
-docker build . -t dify-web:1.3.2 -f ./Dockerfile.fork
-docker tag dify-web:1.3.2 g-wizl0946-docker.pkg.coding.net/ai/docker/dify-web:1.3.2
+docker build . -t dify-web:1.4.1 -f ./Dockerfile.fork
+docker tag dify-web:1.4.1 g-wizl0946-docker.pkg.coding.net/ai/docker/dify-web:1.4.1
 
 
 ## 启动文件

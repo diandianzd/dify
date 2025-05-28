@@ -22,6 +22,7 @@ RUN pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
 # Install Python dependencies
 # export UV_HTTP_TIMEOUT=120
 ENV UV_HTTP_TIMEOUT=360
+# 复制 uv.lock.fork 到 uv.lock
 COPY pyproject.toml uv.lock ./
 RUN uv sync --locked --verbose --index https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
 
